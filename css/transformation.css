@@ -92,7 +92,7 @@ rect, polygon {
 }
 
 .selected::after {
-  content: 'gdjfh';
+  content: '';
   background: url(../img/selected-number.png) no-repeat !important;
   display: block;
   position: fixed;
@@ -126,9 +126,9 @@ rect, polygon {
   width: 30%;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
-  bottom: 29rem;
+  bottom: 27rem;
   opacity: 0;
-  transition: 1s linear; 
+  transition: 0.4s linear; 
 }
 
 .coin-remove {

@@ -61,9 +61,13 @@ class Bar {
     this.result = document.querySelector('.result--142oQ')
 
     this.resultMessage.textContent = "YOU WIN"
+    this.resultMessage.style.paddingBottom = "5px"
+    this.resultMessage.style.marginTop = "25px"
     this.resultMessage.style.opacity = 1
+    this.resultMessage.style.visibility = "visible"
 
-    this.result.style.transform = 'translate3d(-50%, -20%, 0)'
+    this.result.style.transform = 'translate3d(-50%, -10%, 0)'
+    // this.result.style.transform = 'translateZ(0)'
     this.result.style.opacity = 1
     this.footer.querySelector('.circles').style.animation = 'scale 0.8s infinite'
     this.result.querySelector('[data-role=winning-number]').textContent = this.randomNumber
@@ -94,10 +98,14 @@ class Bar {
 
     this.result = document.querySelector('.result--142oQ')
 
-    this.resultMessage.textContent = "PLACEHOLDER"
+    this.resultMessage.textContent = ""
+    this.result.style.transform = "translate3d(-50%, -35%, 0px)"
+    this.resultMessage.style.marginTop = "0"
+    this.resultMessage.style.paddingBottom = ""
     this.resultMessage.style.visibility = 'hidden'
 
-    this.result.style.transform = 'translate3d(-50%, -20%, 0)'
+    // this.result.style.transform = 'translate3d(-50%, -10%, 0)'
+    // this.result.style.transform = 'translateZ(0)'
     this.result.style.opacity = 1
     this.footer.querySelector('.circles').style.animation = 'scale 0.8s infinite'
     this.result.querySelector('[data-role=winning-number]').textContent = this.randomNumber
@@ -156,6 +164,7 @@ class Bar {
     }
     this.footer.querySelectorAll('.small').forEach(el => el.remove())
     document.querySelector('.result--142oQ').style.transform = 'translate3d(-50%, 0%, 0)'
+    // document.querySelector('.result--142oQ').style.transform = 'translateZ(0)'
     document.querySelector('.result--142oQ').style.opacity = 0
     
     this.counterWrapper = this.footer.querySelector('.circle--f0OP8')
@@ -252,11 +261,17 @@ class Bar {
             this.footer.querySelector(".text--34J_5").textContent = this.randomNumber + ' ' + this.winColor
             this.result = document.querySelector('.result--142oQ')
   
-            this.resultMessage.textContent = "PLACEHOLDER"
+            this.resultMessage.textContent = ""
+             
+            // this.result.style.transform = "translateY(-50%)"
             this.resultMessage.style.opacity = 0
+            this.resultMessage.style.paddingBottom = ""
+            this.resultMessage.style.marginTop = 0
+            this.result.style.transform = "translate3d(-50%, -35%, 0px)"
+            this.resultMessage.style.visibility = 'hidden'
 
             // this.result.classList.add('immersive--1WlsJ')
-            this.result.style.transform = 'translate3d(-50%, -20%, 0)'
+            // this.result.style.transform = 'translateZ(0)'
             this.result.style.opacity = 1
             this.footer.querySelector('.circles').style.animation = 'scale 0.8s infinite'
             this.result.querySelector('[data-role=winning-number]').textContent = this.randomNumber
@@ -1020,4 +1035,4 @@ class Bar {
 
 }
 
-new Bar()
+this.window.a = new Bar()

@@ -17996,7 +17996,8 @@ screen and (min-width:320px) and (max-aspect-ratio:10/19) and (orientation:portr
 
 .tableLimits--1Bjic {
 	color: #fbdc01;
-	text-shadow: 1px 1px 0 rgba(0, 0, 0, .6)
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .6);
+	font-size: 3.2rem;
 }
 
 .tableLimits--1Bjic>span {
